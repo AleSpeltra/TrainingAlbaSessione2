@@ -148,3 +148,8 @@ Children:
   DataType: Boolean
   Value: false
 - File: PLC/PLC.yaml
+- Name: Variable1
+  Id: g=84c0db7b0a66300741176f78d65e8655
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
