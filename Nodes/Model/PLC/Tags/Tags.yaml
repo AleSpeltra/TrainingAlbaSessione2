@@ -1,0 +1,72 @@
+Name: Tags
+Id: g=2f2ca5193b4740128cfced865b12a053
+Type: FolderType
+Children:
+- Name: Prova
+  Id: g=39e5245d918c4b33825f3c75f3eac57e
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=23a5d272f65e4764b3106c7d5fd9d580
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "/Objects/TrainingAlbaSessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag1"
+    Children:
+    - Name: Mode
+      Id: g=702e148a14fa45ceaca0f9845096ea99
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Pippo
+  Id: g=af2b2f1be210446383ef8b567ede0d93
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=6155b9655f654746b6653f6115c025e5
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "/Objects/TrainingAlbaSessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag2"
+    Children:
+    - Name: Mode
+      Id: g=f243ef1d82844710b19d157e9fe351ee
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ModbusTag3
+  Id: g=bb75e5160d644759842d7ece2733b00e
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=f4a3220fa4204e0fa230c7aef3363c93
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "/Objects/TrainingAlbaSessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag3"
+    Children:
+    - Name: Mode
+      Id: g=473617a6c0614f87aa7f7c7c1d04b2e0
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ModbusTag4
+  Id: g=f5f05eb4d1734f0392b4a8ad5c8ebef6
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=48840eefca664cef983aa190f09c4744
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "/Objects/TrainingAlbaSessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag4"
+    Children:
+    - Name: Mode
+      Id: g=465bb26d395b426ca0aea281e6361cfb
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

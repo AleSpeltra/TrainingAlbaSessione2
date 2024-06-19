@@ -1,0 +1,109 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Id: g=16fac2f2a016f65fad522b6c2ab44676
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [60,5],
+    "Body": [
+     "","en-US","it-IT","de-DE","fr-FR",
+     "Reboot","Reboot","Riavvia","","",
+     "Mask","Mask","Maschera","","",
+     "Apply","Apply","Applica","","",
+     "RebootToCommitChanges","Reboot to commit changes","Riavviare per applicare le modifiche","","",
+     "DHCPClientEnabled","DHCP client enabled","Client DHCP abilitato","","",
+     "DNS2","DNS 2","DNS 2","","",
+     "IPAddress","IP address","Indirizzo IP","","",
+     "DNS1","DNS 1","DNS 1","","",
+     "LAN","LAN","LAN","","",
+     "WAN","WAN","WAN","","",
+     "DefaultGateway","Default gateway","Gateway predefinito","","",
+     "Save","Save","Salva","","",
+     "Delete","Delete","Elimina","","",
+     "RecipeControllerDeleted","deleted","eliminata","","",
+     "RecipesEditorNotFound","not found","non trovato","","",
+     "RecipesEditorNotSet","is not set","non è impostato","","",
+     "Load","Load","Carica","","",
+     "RecipeControllerSaved","saved","salvata","","",
+     "RecipeControllerCreatedAndSaved","created and saved","creata e salvata","","",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","Il nome della ricetta è vuoto","","",
+     "RecipeControllerRecipe","Recipe","Ricetta","","",
+     "RecipeControllerRecipeApplied","Recipe applied","Ricetta applicata","","",
+     "RecipeControllerRecipeLoaded","Recipe loaded","Ricetta caricata","","",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","Variabile RecipeSchema non trovata","","",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","RecipeSchema non impostato","","",
+     "RecipesEditorRecipeNotFound","Recipe not found","Ricetta non trovata","","",
+     "RecipesEditorNotARecipe","is not a recipe","non è una ricetta","","",
+     "RecipesEditorStoreOfSchema","Store of schema","L'archivio dello schema","","",
+     "RecipesEditorStore","Store","Archivio","","",
+     "RecipesEditorNotAStore","is not a store","non è un archivio","","",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","EditModel dello schema","","",
+     "Password","Password","Password","","",
+     "Login","Login","Login","","",
+     "Old password","Old password","Vecchia password","","",
+     "LoginChangePasswordFormUnsupportedOperation","Unsupported operation","Operazione non supportata","","",
+     "New password","New password","Nuova password","","",
+     "Confirm password","Confirm password","Conferma password","","",
+     "Change password","Change password","Cambia password","xzczcxz<","",
+     "Current User:","Current User:","Utente corrente:","","",
+     "Logout","Logout","Logout","","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","Password scaduta.\nImmetterne una nuova.","","",
+     "LoginFormLoginSuccessful","Login successful","Login riuscito","","",
+     "LoginFormPasswordExpired","Password expired","Password scaduta","","",
+     "LoginFormAuthenticationFailed","Authentication failed","Autenticazione fallita","","",
+     "LoginChangePasswordFormWrongOldPassword","Wrong old password","Vecchia password errata","","",
+     "LoginChangePasswordFormPasswordAlreadyUsed","Password already used","Password già utilizzata","","",
+     "LoginChangePasswordFormPasswordChangedTooRecently","Password changed too recently","Password cambiata troppo recentemente","","",
+     "LoginChangePasswordFormPasswordTooShort","Password too short","Password troppo corta","","",
+     "LoginChangePasswordFormPasswordsDoNotMatch","Passwords do not match","Le password non coincidono","","",
+     "LoginChangePasswordFormUserNotFound","User not found","Utente non trovato","","",
+     "ENGINE","ENGINE","MOTORE","","",
+     "Timestamp","Timestamp","Timestamp","","Horodatage",
+     "Name","Name","Nome","","Nom",
+     "Message","Message","Messaggio","","Message",
+     "Active","Active","Attivo","dsfsdafsadf","Actif",
+     "SourceName","Source Variable","Variabile sorgente","","Variable source",
+     "Acked","Acked","Riconosciuto","sdflsdfksdlfksdl","Acquitté",
+     "Severity","Severity","Gravità","","Gravité",
+     "Confirmed","Confirmed","Confermato","","Confirmé"
+    ]
+   }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Users/ASPELTRA/OneDrive - Rockwell Automation, Inc/Desktop/TrainingAlbaSessione2/ProjectFiles/prova.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"

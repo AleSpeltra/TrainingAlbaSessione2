@@ -1,0 +1,224 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=244b378dcd27dc93e8f3de02b66bfaa6
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLogger1
+      Id: g=07f0ed9e99e65acdf1275acc4a73ceca
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ModbusTag1
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: ModbusTag2
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: ModbusTag3
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: ModbusTag4
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+    - Name: RicetteAlba
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Model/VarString
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Model/VarBool
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /Model/VarInt
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag1
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: /CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag2
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: /CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag3
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: /CommDrivers/ModbusDriver1/ModbusStation1/Tags/ModbusTag4
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+    - Name: RecipeSchema2
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /VarString
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /VarBool
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /VarInt
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+  - Class: Reference
+    Target: ns=11;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=9;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=59
+    Direction: Forward
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DB_DataLogger"

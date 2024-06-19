@@ -1,0 +1,31 @@
+Name: CommDrivers
+Type: CommDriversCategoryFolder
+Children:
+- File: ModbusDriver1/ModbusDriver1.yaml
+- Name: FromPLCToModel2
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: InputNode
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags"
+  - Name: DestinationFolder
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/Model/PLC"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: SetDynamicLinks
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Class: Method
+    Name: GenerateNodesIntoModel

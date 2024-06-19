@@ -1,0 +1,250 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=f8ce10101412d68b7f8c2c25f4e55dbc
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Model
+      Type: BaseObjectType
+      Children:
+      - Name: VarString
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: VarBool
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: VarInt
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+    - Name: CommDrivers
+      Type: BaseObjectType
+      Children:
+      - Name: ModbusDriver1
+        Type: BaseObjectType
+        Children:
+        - Name: ModbusStation1
+          Type: BaseObjectType
+          Children:
+          - Name: Tags
+            Type: BaseObjectType
+            Children:
+            - Name: ModbusTag1
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag2
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag3
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag4
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+  - Class: Reference
+    Target: ns=27;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "RicetteAlba"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=0607ac55e81b251a8984d611ee34fd8a
+    Type: BaseObjectType
+    Children:
+    - Name: Model
+      Type: BaseObjectType
+      Children:
+      - Name: VarString
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: VarBool
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: VarInt
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+    - Name: CommDrivers
+      Type: BaseObjectType
+      Children:
+      - Name: ModbusDriver1
+        Type: BaseObjectType
+        Children:
+        - Name: ModbusStation1
+          Type: BaseObjectType
+          Children:
+          - Name: Tags
+            Type: BaseObjectType
+            Children:
+            - Name: ModbusTag1
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag2
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag3
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: ModbusTag4
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+- Name: RecipeSchema2
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: VarString
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: VarBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: VarInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=27;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TrainingAlbaSessione2/Model"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=80b715ef9e332e16a0af08f65a5dba88
+    Type: BaseObjectType
+    Children:
+    - Name: VarString
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: VarBool
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: VarInt
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

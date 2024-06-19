@@ -1,0 +1,75 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: Utente
+  Id: g=34079414de84446be12e73fe302b9b77
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=f0aae2f8c144b70f0c1f24357d0c5a75
+  - Name: Password
+    Id: g=46f7238967eb07605150b571fcdde573
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=843b48050193fa2de79891f0a6a397cb
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [103,30,60,108,61,39,223,255,51,223,177,211,88,11,14,133,66,143,249,67,255,35,73,43,128,188,92,70,37,137,136,217],
+         "Salt": [85,17,248,121,158,54,205,202,7,21,170,75,140,242,61,143,75,63,73,64,147,126,80,20,183,190,233,242,58,150,29,212]
+        }
+       }
+    - Name: ChangeTimestamp
+      Id: g=09deae6f097a54f895cdfc48d245637c
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2024-06-19T12:13:27.5793870"
+    - Name: History
+      Id: g=9236259bec27b240f5e2effc6941eb01
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[103,30,60,108,61,39,223,255,51,223,177,211,88,11,14,133,66,143,249,67,255,35,73,43,128,188,92,70,37,137,136,217],"Salt":[85,17,248,121,158,54,205,202,7,21,170,75,140,242,61,143,75,63,73,64,147,126,80,20,183,190,233,242,58,150,29,212]}}]
+  - Name: LocaleId
+    Id: g=922213fa8bd0bd8a7f5fb79040ed6ba6
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "it-IT"
+  - Name: Language
+    Id: g=9e14ceb758bd95037c5e4f4a1e9641bf
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "it-IT"
+- Name: Admin
+  Id: g=f8cf9e630e31dd8c6c27ad8bb3c98197
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=7a7dac4b3f3fbbc3b395721d5dfe84f3
+- Name: Sviluppatore
+  Id: g=59041778f741f3086f05a3c6174e5e0c
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=7108b10ad9f5a9292f31362e1ec5dd60
