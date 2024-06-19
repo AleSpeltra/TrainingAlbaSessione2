@@ -124,10 +124,10 @@ Project:
    Module: FTOptix.OPCUAServer.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 2223
-  Objects: 465
-  ObjectTypes: 14
-  Variables: 1717
+  TotalNodeCount: 2247
+  Objects: 471
+  ObjectTypes: 15
+  Variables: 1734
   VariableTypes: 0
   DataTypes: 0
   Methods: 27

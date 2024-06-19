@@ -414,7 +414,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Password
           Description: {"NamespaceIndex":1,"TextId":"LoginPasswordDescription"}
-          SecretValue: iaFQPFZpSrkjaertfwhVmMZLd4SBPknzBbkIAQ==
+          SecretValue: coREoR37s4uVRFw5DqGqOcAxg2S7RNaux5wpQw==
       - Name: OutputArguments
         Type: BaseObjectType
         Children:

@@ -63,6 +63,7 @@ Children:
       AccessLevel: Read
     - Class: Reference
       Target: ns=3;i=480
+      Direction: Forward
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -456,6 +457,7 @@ Children:
   Children:
   - Class: Reference
     Target: ns=3;i=519
+    Direction: Forward
   - Name: Width
     Type: BaseVariableType
     DataType: Size
@@ -590,6 +592,7 @@ Children:
           Children:
           - Class: Reference
             Target: g=f1305c0ed1577b7b4e4d535c1be4762a
+            Direction: Forward
         - Name: MouseClickEventHandler1
           Type: EventHandler
           Children:
@@ -656,6 +659,53 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../ConfirmPassword/Text"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: resultCode
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+            - Name: MethodContainer2
+              Type: BaseObjectType
+              Children:
+              - Name: ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../ChangePasswordFormOutputMessage/LoginChangePasswordFormOutputMessageLogic@NodeId"
+              - Name: Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "SetOutputMessage"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: message
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: KeyValueConverter1
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../MethodContainer1/OutputArguments/resultCode"
           - Name: EventArguments
             Type: MouseClickEvent
             Children:

@@ -4195,7 +4195,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Password
               Description: {"NamespaceIndex":1,"TextId":"LoginPasswordDescription"}
-              SecretValue: xiPRp+xKIErV+69THuBBvV5Cn+xLA1tj/pAUgQ==
+              SecretValue: EpwgJBG30meiiIw96gBxZqgBVP6XRLao6+uPDQ==
           - Name: OutputArguments
             Type: BaseObjectType
             Children:
@@ -4721,3 +4721,57 @@ Children:
   Id: g=9a15fbfcedc041d530a49b93c87cc22b
   Supertype: Screen
   ReferenceType: HasComponent
+- Name: ScreenWEB
+  Id: g=b871594c6fae642bab0aae2c4774d399
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: LED1
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: SpinBox1
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
