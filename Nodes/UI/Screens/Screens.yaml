@@ -4195,7 +4195,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Password
               Description: {"NamespaceIndex":1,"TextId":"LoginPasswordDescription"}
-              SecretValue: EpwgJBG30meiiIw96gBxZqgBVP6XRLao6+uPDQ==
+              SecretValue: d+yWipGvcc2ELmU4m73rlV1MA3yrghYhV7y2vw==
           - Name: OutputArguments
             Type: BaseObjectType
             Children:
@@ -4752,7 +4752,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 520.0
+      Value: 1190.0
     - Name: Color
       Type: BaseDataVariableType
       DataType: Color
