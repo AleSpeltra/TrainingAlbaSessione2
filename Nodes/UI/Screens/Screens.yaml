@@ -4752,7 +4752,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 30.0
+      Value: 1190.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#0fafff"
   - Name: SpinBox1
     Type: SpinBox
     Children:
